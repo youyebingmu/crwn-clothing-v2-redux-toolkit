@@ -37,3 +37,7 @@ git checkout -b my-main-branch
 ```
 
 3. Now you can just code on this branch, push code from this branch up to your forked repo etc. The main thing to remember is that you want to be on this branch for your own code, so remember what you named this branch!
+
+## From redux-tool
+
+- Install redux-tool `yarn add @reduxjs/toolkit`
