@@ -29,6 +29,7 @@ const firebaseConfig = {
   appId: '1:69131942395:web:738f6b440d79da1474b35e',
 };
 
+// eslint-disable-next-line no-unused-vars
 const firebaseApp = initializeApp(firebaseConfig);
 
 const googleProvider = new GoogleAuthProvider();
