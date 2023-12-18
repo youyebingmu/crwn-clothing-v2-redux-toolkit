@@ -41,3 +41,21 @@ git checkout -b my-main-branch
 ## From redux-tool
 
 - Install redux-tool `yarn add @reduxjs/toolkit`
+
+- Install stripe `yarn add @stripe/stripe-js @stripe/react-stripe-js`
+
+- Add .env file under the project folder
+
+## Integrate stripe backend making serverless function
+
+- `yarn add stripe dotenv`
+
+- Install netlify-cli globaly
+
+```
+npm install -g netlify-cli
+
+netlify login
+netlify dev
+
+```

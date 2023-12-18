@@ -23,7 +23,12 @@ const App = () => {
         createUserDocumentFromAuth(user);
       }
       const pickupUser =
-        user && (({ accessToken, email }) => ({ accessToken, email }))(user);
+        user &&
+        (({ accessToken, email, displayName }) => ({
+          accessToken,
+          email,
+          displayName,
+        }))(user);
       console.log(setCurrentUser(pickupUser));
       dispatch(setCurrentUser(pickupUser));
     });
