@@ -22,15 +22,11 @@ const App = () => {
       if (user) {
         createUserDocumentFromAuth(user);
       }
-      const pickupUser =
-        user &&
-        (({ accessToken, email, displayName }) => ({
-          accessToken,
-          email,
-          displayName,
-        }))(user);
-      console.log(setCurrentUser(pickupUser));
-      dispatch(setCurrentUser(pickupUser));
+      const pickedUser =
+        user && (({ accessToken, email }) => ({ accessToken, email }))(user);
+
+      console.log(setCurrentUser(pickedUser));
+      dispatch(setCurrentUser(pickedUser));
     });
 
     return unsubscribe;
